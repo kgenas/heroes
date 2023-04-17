@@ -12,7 +12,7 @@ const initialState: HeroState = {
 
 export const hero = createSlice({
   name: 'hero',
-  initialState,  
+  initialState,
   reducers: {
     login: (state , action: PayloadAction<HeroState>) => {
       const { name } = action.payload;

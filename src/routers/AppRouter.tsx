@@ -23,6 +23,6 @@ export const AppRouter = () =>{
                 }
                 />     
             </Routes>
-        </BrowserRouter>
+        </BrowserRouter>        
     );
 };

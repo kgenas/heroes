@@ -1,3 +1,4 @@
+import React from "react";
 import { useLocation, useNavigate } from "react-router-dom"
 import queryString from 'query-string'; //*  npm install query-string
 import { useState, useMemo } from 'react';

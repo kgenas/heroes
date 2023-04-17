@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom';
 
 //* para que no de error en require.context
 //? npm i -D @types/webpack-env
-const heroImages = require.context('../../assets',true);
-
 interface valuePros{
     id:string;
     superhero:string;
@@ -18,14 +16,13 @@ export const HeroCard = ({
     alter_ego,
     first_appearance,
     characters
-}:valuePros) =>{
-    const imagePath = heroImages(`./${id}.jpg`);
+}:valuePros) =>{    
     return(
         <div className="col animate__animated animate__fadeIn">
             <div className="card">
                 <div className="row no-gutters">
                     <div className="col-4">
-                        <img src={ imagePath } className ='card-img' alt = { superhero } />
+                        <img src={ require(`../../assets/${id}.jpg`) } className ='card-img' alt = { superhero } />
                     </div>
                     <div className="col-8">
                         <div className="card-body">
