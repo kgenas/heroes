@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroCard HeroCard Snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="col animate__animated animate__fadeIn"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="row no-gutters"
+        >
+          <div
+            class="col-4"
+          >
+            <img
+              alt="Batman"
+              class="card-img"
+              src="dc-batman.jpg"
+            />
+          </div>
+          <div
+            class="col-8"
+          >
+            <div
+              class="card-body"
+            >
+              <h5
+                class="card-litle"
+              >
+                Batman
+              </h5>
+              <p
+                class="card-test"
+              >
+                Bruce Wayne
+              </p>
+              <p
+                class="card-text"
+              >
+                <small
+                  class="text-muted"
+                >
+                  Detective Comics #27
+                </small>
+              </p>
+              <a
+                href="/hero/dc-batman"
+              >
+                Mas...
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -25,7 +25,7 @@ export function renderWithProviders(
   }: ExtendedRenderOptions = {}
 ) {
   function Wrapper({ children }: PropsWithChildren<{}>): JSX.Element {
-    return <Provider store={store}>{children}</Provider>
+    return <Provider store={store}><BrowserRouter>{children}</BrowserRouter></Provider>
   }  
-  return { store, ...render(<BrowserRouter>ui</BrowserRouter>, { wrapper: Wrapper, ...renderOptions }) }
+  return { store, ...render(ui, { wrapper: Wrapper,...renderOptions }) }
 }
